@@ -1,0 +1,30 @@
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'maven'
+apply plugin: 'jetty'
+
+description = 'EdaoTech OpenID Connect Client Demo'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'commons-codec:commons-codec:1.9'
+
+	compile fileTree(dir: "libs", includes: ['*.jar'])
+
+	providedCompile 'javax.servlet:servlet-api:2.5'
+	runtime 'javax.servlet:jstl:1.1.2'
+
+}
+
+tasks.withType(JavaCompile) {  
+    options.encoding = 'UTF-8'  
+	sourceCompatibility = 1.6
+	targetCompatibility = 1.6
+}  
+
+jettyRun.httpPort = 9999
