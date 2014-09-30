@@ -11,6 +11,7 @@ In order to build this project, you need :
 Run the demo
 ================================================
 You can get and run the demo follow steps below:
+
 * get the code
     git clone https://github.com/EdaoTechLtd/edao-openid-connect-j2ee-demo.git
 * build and run
@@ -24,6 +25,7 @@ You can get and run the demo follow steps below:
 Howtos
 ================================================
 
-Q: How to own my own Edao Login Credentials
+Q: How to own my own Edao Login Credentials<br>
 A: Check http://www.edaotech.com/sqrk for details
+
 
